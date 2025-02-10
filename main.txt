@@ -4,7 +4,8 @@ Let's make a game!
   
 Settings
   background:https://getsol.us//imgs/release-images/2025-01-26/XFCE.jpg
-  stylesheet:/stuff/basic.css
+  stylesheet:stuff/basic.cs
+  stylesheet:https://raw.githubusercontent.com/Staudey/distro-clicker/refs/heads/main/style.css
 
 Buttons
 *marketSolus
