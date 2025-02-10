@@ -1,0 +1,39 @@
+Let's make a game!
+  name:Solus Clicker
+  version: 0
+  
+Settings
+  background:https://getsol.us//imgs/release-images/2025-01-26/XFCE.jpg
+  stylesheet:/stuff/basic.css
+
+Buttons
+*marketSolus
+  name:Market Solus!
+  desc:Click this to market Solus. Grants 1 user per click
+  icon:https://getsol.us/imgs/solus.png
+  on click:yield 1 user
+
+Resources
+  *user|users
+    name:Users
+    desc:Just some silly little guys using Solus
+
+Upgrades
+  *upstreamName
+    name:Upstream names
+    desc:Use the correct upstream name for packages so users can find them
+    passive:multiply yield of packages by 2
+    cost:50 users
+    
+  *correctLicense
+    name:Correct Licences
+    desc:Use valid SPDX identifiers for package license info. Pleases the nerds.
+    passive:multiply yield of packages by 2
+    cost:100 users
+
+Buildings
+  *package|packages
+    name:Packages
+    desc:A new package for the repository, attracting more users.
+    cost:20 users
+    on tick:yield 1 user
